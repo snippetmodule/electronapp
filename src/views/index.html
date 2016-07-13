@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Hello World!</title>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!--<script src="../../src/views/app/main.js"></script>-->
+    <script>
+        console.log('node:' + process.versions.node);
+        console.log('chrome:' + process.versions.chrome);
+        console.log('electron:' + process.versions.electron);
+    </script>
 </head>
 <body>
 <h1>Hello World!</h1>
@@ -11,9 +17,6 @@ We are using node <script>document.write(process.versions.node)</script>,
 Chromium <script>document.write(process.versions.chrome)</script>,
 and Electron <script>document.write(process.versions.electron)</script>.
 </body>
-
-<script>
-  // You can also require other files to run in this process
-  require('./renderer.js')
-</script>
+<my-app>Loading...</my-app>
+</body>
 </html>
